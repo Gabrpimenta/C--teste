@@ -71,4 +71,25 @@ public class Program
       Console.Write("Iguais");
     }
   }
+
+/* Questão 03 - Resultado do programa abaixo:
+ 
+{
+if (n == 1) return 1;
+if (n % 2 == 0) return ff( n/2);
+return ff( (n-1)/2) + ff( (n+1)/2);
+}
+void main() {
+printf( "%d", ff(7));
+return;
+}
+
+O programa acima é uma função recursiva que recebe um inteiro n e retorna um valor inteiro.
+
+Se n for igual a 1, a função retorna 1.
+Se n for par, a função chama a si mesma com o parâmetro n/2.
+Se n for ímpar, a função chama a si mesma com os parâmetros (n-1)/2 e (n+1)/2 e retorna a soma dos valores retornados por essas chamadas recursivas.
+No main() do programa, a função ff() é chamada com o parâmetro 7 e o resultado retornado é impresso na tela. O resultado dessa chamada é 7, ou seja, o programa imprime o número 7 na tela.
+
+*/
 }
