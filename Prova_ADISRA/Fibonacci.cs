@@ -1,10 +1,9 @@
 ﻿using System;
 
-namespace Fibonacci
-{
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        // Questão 01 - Fibonacci
+        public static void Main(string[] args)
         {
             Console.Write("Digite a posição desejada na sequência de Fibonacci: ");
             int posicao = int.Parse(Console.ReadLine());
@@ -26,4 +25,3 @@ namespace Fibonacci
                 return Fib(posicao - 1) + Fib(posicao - 2);
         }
     }
-}
